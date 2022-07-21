@@ -13,12 +13,9 @@ io.on("connection", (socket) => {
 
         if(!pattern.test(url)) {
             url = "https://" + url
-            console.log(`url; ${url}`)
             open(url)
             return
         }
-
-        console.log(`url outside ifblock; ${url}`)
         open(url)
     })
 
